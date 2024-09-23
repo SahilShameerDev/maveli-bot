@@ -1,38 +1,62 @@
-.App {
+/* MaveliBot.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f1de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.bot-container {
+  background-color: #264653;
+  color: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bot-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #e9c46a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bot-container input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bot-container button {
+  width: 100px;
+  padding: 10px;
+  background-color: #2a9d8f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.bot-container button:hover {
+  background-color: #21867a;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bot-response {
+  margin-top: 20px;
+  background-color: #e76f51;
+  padding: 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
 }

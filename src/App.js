@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './App.css';
 
 function MaveliBot() {
   const [userInput, setUserInput] = useState('');
@@ -80,7 +81,8 @@ function MaveliBot() {
   };
 
   return (
-    <div>
+    <div className="bot-container">
+      <h1>Maveli Bot</h1>
       <input 
         type="text" 
         value={userInput} 
@@ -88,7 +90,9 @@ function MaveliBot() {
         placeholder="Type your message in English" 
       />
       <button onClick={handleSubmit}>Send</button>
-      <p>Bot says: {botResponse}</p>
+      <div className="bot-response">
+        Bot says: {botResponse}
+      </div>
     </div>
   );
 }
